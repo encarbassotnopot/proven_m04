@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Eina">
+	<title>Horari</title>
+	<style>
+		body {
+			font-family: 'Anek Gurmukhi', sans-serif;
+			max-width: 66ch;
+			margin: auto;
+			min-height: 100vh;
+			display: grid;
+			grid-template-rows: 1fr auto;
+			justify-items: center;
+		}
+		.main {
+			display: flex;
+			flex-flow: column;
+		}
+		h1 {
+			font-family: 'Zilla Slab', serif;
+			text-align: center;
+		}
+		td {
+			text-align: center;
+		}
+		th, td {
+			padding: 8px 4px 4px 4px;
+		}
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			vertical-align: middle;
+		}
+		footer {
+			display: flex;
+			flex-flow: row;
+			padding: 16px;
+		}
+		footer > a {
+			display: flex;
+			flex-flow: row;
+			text-decoration: none;
+			align-items: center;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+	<h1>Horari</h1>
+	<table>
+		<colgroup>
+		<col style="text-align: end"/>
+		</colgroup>
+		<tbody>
+			<tr>
+				<td></td>
+				<th scope="col">Dilluns</td>
+				<th scope="col">Dimarts</td>
+				<th scope="col">Dimecres</td>
+				<th scope="col">Dijous</td>
+				<th scope="col">Divendres</td>
+			</tr>
+			<tr>
+				<th scope="row">8.30h<br/>9.30h</td>
+				<td rowspan="3">Programació</td>
+				<td rowspan="2">FOL</td>
+				<td></td>
+				<td rowspan="2">Entorns de Desenvolupament</td>
+				<td rowspan="3">Bases de Dades</td>
+			</tr>
+			<tr>
+				<th scope="row">9.30h<br/>10.30h</td>
+				<td rowspan="2">EIE</td>
+			</tr>
+			<tr>
+				<th scope="row">10.30h<br/>11.30h</td>
+				<td>Bases de Dades</td>
+				<td>Sistemes Informàtics</td>
+			</tr>
+			<tr>
+				<th scope="row">11.30h<br/>12.00h</td>
+				<td colspan="5">Pati</td>
+			</tr>
+			<tr>
+				<th scope="row">12.00h<br/>13.00h</td>
+				<td rowspan="3">Llenguatge de Marques</td>
+				<td>Bases de Dades</td>
+				<td rowspan="2">Programació</td>
+				<td>Sistemes Informàtics</td>
+				<td rowspan="2">Programació</td>
+			</tr>
+			<tr>
+				<th scope="row">13.00h<br/>14.00h</td>
+				<td rowspan="2">Sistemes Informàtics</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">14.00h<br/>15.00h</td>
+				<td>Tutoria</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+
+	</div>
+	<footer>
+		<a href="https://www.proven.cat/intraweb/">
+			<img src="./logo_provençana_color.svg" alt="Institut Provençana" height="64px">
+			<p>Institut Provençana</p>
+		</a>
+	</footer>
+	</body>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');
+</style>
+</html>

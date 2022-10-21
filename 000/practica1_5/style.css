@@ -1,0 +1,120 @@
+body {
+	font-family: 'Anek Gurmukhi', sans-serif;
+	max-width: 66ch;
+	margin: auto;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	justify-items: center;
+}
+
+.main {
+	display: flex;
+	flex-flow: column;
+}
+
+.main > * {
+	margin: 8px;
+}
+
+h1 {
+	font-family: 'Zilla Slab', serif;
+	text-align: center;
+}
+
+tr:first-child th::first-letter {
+	font-size: 1.5em;
+}
+
+td {
+	text-align: center;
+}
+
+th,
+td {
+	padding: 8px 4px 4px 4px;
+}
+
+.divendres {
+	transition: font-size 1s;
+}
+
+.divendres:hover {
+	font-size: 2em;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	vertical-align: middle;
+}
+
+footer {
+	display: flex;
+	flex-flow: row;
+	padding: 16px;
+}
+
+footer>a {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+}
+
+footer>a:link {
+	color: green;
+}
+
+footer>a:visited {
+	color: red;
+}
+
+/* Colors dels mòduls */
+
+.m01 {
+	background-color: violet;
+}
+
+.m02 {
+	background-color: tomato;
+}
+
+.m03 {
+	background-color: seagreen;
+}
+
+.m04 {
+	background-color: turquoise;
+}
+
+.m05 {
+	background-color: coral;
+}
+
+.m11 {
+	background-color: chocolate;
+}
+
+.m12 {
+	background-color: darksalmon;
+}
+
+.tutoria {
+	background-color: royalblue;
+}
+
+/* Formulari */
+label[for="email"]::after {
+	content: "*";
+	color: red;
+}
+
+input:required {
+	border: 2px solid red;
+	padding: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');

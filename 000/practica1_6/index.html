@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Eina">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pràctica 1.6</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<h1>Pràctica 1.6</h1>
+		<form action="" method="post">
+			<fieldset>
+				<legend>Dades personals</legend>
+				
+				<label class="required" for="edat">Edat</label>
+				<input name="edat" id="edat" type="number" required="required">
+
+				<label for="email">Email</label>
+				<input name="email" id="email" type="email">
+
+				<label class="required" for="contrasenya">Contrasenya</label>
+				<input name="contrasenya" id="contrasenya" type="password">
+
+				<label for="naixement">Data de naixement</label>
+				<input type="date" name="naixement" id="naixement">
+			</fieldset>
+			<fieldset>
+				<legend>Situació actual</legend>
+				<label for="moduls">Mòduls a evaluar</label>
+				<select name="moduls" id="moduls">
+					<option value="M01">M01</option>
+					<option value="M02">M02</option>
+					<option value="M03">M03</option>
+					<option value="M04">M04</option>
+					<option value="M05">M05</option>
+					<option value="M11">M11</option>
+					<option value="M12">M12</option>
+				</select>
+				<label for="situacio">Situació actual</label>
+				<select name="situacio" id="situacio">
+					<option value="estudi">Estudis</option>
+					<option value="fct">FCT</option>
+					<option value="estudi-fct">Estudis i FCT</option>
+					<option value="treball-estudi">Treballo i estudio</option>
+				</select>
+			</fieldset>
+		</form>
+	</div>
+	<footer>
+		<a href="https://www.proven.cat/intraweb/">
+			<img src="./logo_provençana_color.svg" alt="Institut Provençana" height="64px">
+			<p>Institut Provençana</p>
+		</a>
+	</footer>
+</body>
+
+</html>

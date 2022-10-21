@@ -1,0 +1,48 @@
+body {
+	font-family: 'Anek Gurmukhi', sans-serif;
+	margin: auto;
+	min-height: 100vh;
+	width: min-content;
+	display: flex;
+	flex-flow: column;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	width: 150px;
+}
+
+.primera-columna {
+	background: green;
+	color: white;
+}
+
+.emmagatzematge td {
+	background: grey;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+#llista {
+	color: red;
+}
+
+td[colspan="2"],
+td[rowspan="3"] {
+	background-color: blue;
+}
+
+table,
+td,
+th {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+#superior {
+	padding: 16px 1px;
+	background: yellow;
+}
