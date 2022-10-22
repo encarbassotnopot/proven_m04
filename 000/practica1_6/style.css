@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');
+
+* {
+	margin: 4px;
+}
+
 body {
 	font-family: 'Anek Gurmukhi', sans-serif;
 	margin: auto;
@@ -5,6 +12,12 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	justify-items: center;
+}
+
+
+h1 {
+	font-family: 'Zilla Slab', serif;
+	text-align: center;
 }
 
 form {
@@ -16,15 +29,67 @@ form {
 
 label {
 	display: block;
+	margin-top: 8px;
 }
 
-* {
-	margin: 4px;
+label.required::after {
+	content: " *";
+	color: red;
 }
 
-h1 {
-	font-family: 'Zilla Slab', serif;
-	text-align: center;
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	display: inline;
+}
+
+input:user-invalid {
+	border: 1px solid red;
+}
+
+fieldset.noborder {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+fieldset.noborder > legend {
+	padding: 0;
+}
+
+form > fieldset > legend {
+	font-size: 1.1em;
+}
+
+form > fieldset:nth-child(8n+1) {
+	background-color:   khaki;
+}
+
+form > fieldset:nth-child(8n+2) {
+	background-color: coral;
+}
+
+form > fieldset:nth-child(8n+3) {
+	background-color: peru;
+}
+
+form > fieldset:nth-child(8n+4) {
+	background-color: lightpink;
+}
+
+form > fieldset:nth-child(8n+5) {
+	background-color: lightcoral;
+}
+
+form > fieldset:nth-child(8n+6) {
+	background-color: lightsalmon;
+}
+
+form > fieldset:nth-child(8n+7) {
+	background-color: lightgreen;
+}
+
+form > fieldset:nth-child(8n) {
+	background-color: aquamarine;
 }
 
 footer {
@@ -41,6 +106,3 @@ footer>a {
 	text-decoration: none;
 	color: black;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');

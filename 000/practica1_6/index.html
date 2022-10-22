@@ -17,10 +17,10 @@
 <body>
 	<div class="main">
 		<h1>Pràctica 1.6</h1>
-		<form action="" method="post">
+		<form action="#" method="post">
 			<fieldset>
 				<legend>Dades personals</legend>
-				
+
 				<label class="required" for="edat">Edat</label>
 				<input name="edat" id="edat" type="number" required="required">
 
@@ -33,9 +33,11 @@
 				<label for="naixement">Data de naixement</label>
 				<input type="date" name="naixement" id="naixement">
 			</fieldset>
+
 			<fieldset>
 				<legend>Situació actual</legend>
-				<label for="moduls">Mòduls a evaluar</label>
+
+				<label for="moduls">Mòduls a avaluar</label>
 				<select name="moduls" id="moduls">
 					<option value="M01">M01</option>
 					<option value="M02">M02</option>
@@ -45,6 +47,7 @@
 					<option value="M11">M11</option>
 					<option value="M12">M12</option>
 				</select>
+
 				<label for="situacio">Situació actual</label>
 				<select name="situacio" id="situacio">
 					<option value="estudi">Estudis</option>
@@ -53,11 +56,91 @@
 					<option value="treball-estudi">Treballo i estudio</option>
 				</select>
 			</fieldset>
+
+			<fieldset>
+				<legend>Cicle</legend>
+
+				<input type="radio" name="cicle" id="asix" value="asix" checked>
+				<label for="asix">ASIX</label>
+
+				<input type="radio" name="cicle" id="dam" value="dam">
+				<label for="dam">DAM</label>
+
+				<input type="radio" name="cicle" id="daw" value="daw">
+				<label for="daw">DAW</label>
+
+				<input type="radio" name="cicle" id="bio" value="bio">
+				<label for="bio">Bioinformàtica</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Professor a avaluar</legend>
+				<label class="required" for="professor">Nom del professor</label>
+				<input type="text" name="professor" id="professor" required="required">
+
+				<label for="satisfaccio">Nivell de satisfacció</label>
+				<input type="range" name="satisfaccio" id="satisfaccio">
+
+				<label for="comentaris">Comentaris</label>
+				<textarea name="comentaris" id="comentaris" cols="50" rows="5" placeholder="Afegeix comentaris"></textarea>
+			</fieldset>
+
+			<fieldset>
+				<legend>Sobre tu</legend>
+
+				<fieldset class="noborder">
+					<legend>Has repetit curs?</legend>
+
+					<input type="radio" name="repetidor" id="repetidor-si" value="si" checked>
+					<label for="repetidor-si">Sí</label>
+	
+					<input type="radio" name="repetidor" id="repetidor-no" value="no">
+					<label for="repetidor-no">No</label>
+				</fieldset>
+
+				<label for="color">Color preferit</label>
+				<input type="color" name="color" id="color">
+
+				<label for="web">Pàgina web</label>
+				<input type="url" name="web" id="web" placeholder="https://example.com" pattern="http[s]?://.*">
+
+				<label for="fitxer">Penja un fitxer</label>
+				<input type="file" name="fitxer" id="fitxer">
+			</fieldset>
+
+			<fieldset>
+				<legend>Altres cursos</legend>
+
+				<input type="checkbox" name="cloudcomputing" id="cloudcomputing">
+				<label for="cloudcomputing">Cloud computing</label>
+
+				<input type="checkbox" name="bigdata" id="bigdata">
+				<label for="bigdata">Big Data</label>
+
+				<input type="checkbox" name="unity" id="unity">
+				<label for="unity">Unity 5</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Data enquesta</legend>
+
+				<label for="data">Data</label>
+				<input type="date" name="data" id="data">
+
+				<label for="hora">Hora</label>
+				<input type="time" name="hora" id="hora">
+			</fieldset>
+
+			<fieldset>
+				<input type="button" value="Enviar" onclick="alert('Formulari enviat.')">
+				<input type="reset" value="Reiniciar">
+				<input type="button" value="Sortir">
+			</fieldset>
 		</form>
 	</div>
 	<footer>
 		<a href="https://www.proven.cat/intraweb/">
-			<img src="./logo_provençana_color.svg" alt="Institut Provençana" height="64px">
+			<img src="./logo_provençana_color.svg" alt="Institut Provençana" height="64">
 			<p>Institut Provençana</p>
 		</a>
 	</footer>
