@@ -1,0 +1,108 @@
+* {
+	margin: 8px;
+}
+
+body {
+	font-family: 'Anek Gurmukhi', sans-serif;
+	margin: auto;
+	min-height: 200vh;
+	display: grid;
+	grid-template:
+		"aside nav" auto
+		"aside main" 1fr / auto 1fr;
+	background: skyblue;
+}
+
+nav {
+	grid-area: nav;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background: dimgray;
+	color: white;
+}
+
+nav > a {
+	color: white;
+	text-decoration: none;
+}
+
+aside {
+	grid-area: aside;
+}
+
+aside > div {
+	grid-area: aside;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
+	border-radius: 8px;
+	position: sticky;
+	top: 20%;
+}
+
+aside > div > * {
+	margin: 2px;
+}
+
+aside > div > img {
+	border-radius: 8px 8px 0 0;
+}
+
+aside > div > a {
+	color: black;
+	text-decoration: none;
+}
+
+main {
+	grid-area: main;
+}
+
+figure {
+	width: min-content;
+	background: white;
+	border: 2px solid black;
+	border-radius: 8px;
+}
+
+figure > img {
+	max-width: 5cm;
+	max-height: 5cm;
+}
+
+figcaption {
+	text-align: center;
+}
+
+.a {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	transform: rotate(-30deg);
+	z-index: 4;
+}
+
+.b {
+	position: absolute;
+	top: 300px;
+	left: 350px;
+	transform: rotate(40deg);
+	z-index: 3;
+}
+
+.c {
+	position: absolute;
+	top: 250px;
+	left: 500px;
+	transform: rotate(-20deg);
+	z-index: 2;
+}
+
+.d {
+	position: absolute;
+	top: 350px;
+	left: 750px;
+	transform: rotate(45deg);
+	z-index: 1;
+}
