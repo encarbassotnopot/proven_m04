@@ -1,0 +1,52 @@
+body {
+	font-family: 'Anek Gurmukhi', sans-serif;
+	margin: auto;
+	min-height: 100vh;
+}
+
+nav {
+	background: #aaa;
+	padding: 16px;
+}
+
+nav > * {
+	margin-inline-end: max(30px, 10%);
+}
+
+aside {
+	float: left;
+	width: 8%;
+	margin-top: min(5%, 50px);
+	background: #aaa;
+	padding: 8px;
+}
+
+aside > * {
+	margin: 4px;
+}
+
+section {
+	float: left;
+	max-width: 30%;
+}
+
+.card {
+	border: solid 4px black;
+	border-radius: 10px;
+	text-align: center;
+	margin: 8px;
+}
+
+.caption {
+	text-align: center;
+	margin: 8px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: #aaa;
+	padding: 4px;
+}

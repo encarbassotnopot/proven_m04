@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');
+
 body {
 	font-family: 'Anek Gurmukhi', sans-serif;
 	max-width: 66ch;
@@ -115,6 +118,3 @@ input:required {
 	border: 2px solid red;
 	padding: 5px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');
