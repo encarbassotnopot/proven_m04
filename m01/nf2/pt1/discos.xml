@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<discos>
+	<disc>
+		<autor>
+			Pupil·les
+		</autor>
+		<títol>
+			Tot i res
+		</títol>
+		<gènere>
+			Pop
+		</gènere>
+		<nombreCançons>
+			10
+		</nombreCançons>
+	</disc>
+	<disc>
+		<autor>
+			Crim
+		</autor>
+		<títol>
+			Blau sang, vermell cel
+		</títol>
+		<gènere>
+			Punk Rock
+		</gènere>
+		<nombreCançons>
+			13
+		</nombreCançons>
+	</disc>
+	<disc>
+		<autor>
+			Maio
+		</autor>
+		<títol>
+			Des dels marges
+		</títol>
+		<gènere>
+			Indie
+		</gènere>
+		<nombreCançons>
+			9
+		</nombreCançons>
+	</disc>
+	<disc>
+		<autor>
+			Manel
+		</autor>
+		<títol>
+			Jo competeixo
+		</títol>
+		<gènere>
+			Pop Rock
+		</gènere>
+		<nombreCançons>
+			11
+		</nombreCançons>
+	</disc>
+</discos>

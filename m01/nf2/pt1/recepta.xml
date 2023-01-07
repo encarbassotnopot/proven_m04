@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recepta>
+	<autor>
+		<nom>
+			Eina
+		</nom>
+		<cognoms>
+			Coma Bages
+		</cognoms>
+		<email>
+			eico4080@office.proven.cat
+		</email>
+		<foto>
+			https://example.com/foto.png
+		</foto>
+	</autor>
+	<títol>
+		Flam
+	</títol>
+	<categoria>
+		Postres
+	</categoria>
+	<tipusCuinat>
+		Forn
+	</tipusCuinat>
+	<foto>
+		https://example.com/foto.png
+	</foto>
+	<comensals>
+		8
+	</comensals>
+	<temps>
+		30
+	</temps>
+	<dificultat>
+		Baixa
+	</dificultat>
+	<ingredients>
+		500 ml de Llet
+		300 g de sucre
+		Sucre cremat
+		Vainilla
+		Pell de llimona
+		2 Ous
+	</ingredients>
+	<preparació>
+		Fem bullir la llet amb la vainilla i la pell de llimona.
+		Batem els ous en un bol, afegim el sucre i hi colem la llet quan ja hagi bullit.
+		Remenem fins que quedi uniforme.
+		En un altre recipient, estenem el sucre cremat i hi avoquem la barrega de sucre ous i llet.
+		Enfornem, al bany maria i tapat amb paper d'alumini.
+		Passat un quart d'hora, comprovem la consistència del flam amb un punxó. Si és adequada el retirem, si no el deixem més estona i repetim.
+	</preparació>
+</recepta>
