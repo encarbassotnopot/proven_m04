@@ -1,0 +1,179 @@
+/* General */
+
+body {
+	display: grid;
+	grid-template:
+		"header header" auto
+		"nav nav" auto
+		"imatges imatges" auto
+		"titulars taula" auto
+		"titulars butlleti" auto
+		"footer footer" auto / 4fr 5fr;
+	width: clamp(800px, 80%, 1200px);
+	margin-inline: auto;
+}
+
+h2 {
+	color: white;
+	background-color: royalblue;
+	padding: 4px;
+	font-size: 1.2em;
+}
+section {
+	margin: 4px;
+}
+
+/* Capçalera */
+
+header {
+	grid-area: header;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.logo {
+	width: 100px;
+	margin: 0;
+}
+
+/* Navegació */
+
+nav {
+	grid-area: nav;
+	position: sticky;
+	top: 0;
+	background-color: royalblue;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.nav-container {
+	margin: 0;
+	display: flex;
+	flex-flow: row;
+	width: max-content;
+	padding: 8px;
+}
+
+.nav-item {
+	padding: 8px;
+	color: white;
+	text-decoration: none;
+}
+
+.nav-item:hover {
+	color: red;
+}
+
+/* Imatges */
+
+#imatges {
+	grid-area: imatges;
+	display: flex;
+	flex-flow: column;
+}
+
+.imatges-contenidor {
+	grid-area: imatges;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+}
+
+.imatge {
+	width: 24%;
+}
+
+/* Titulars */
+
+#titulars {
+	grid-area: titulars;
+	display: flex;
+	flex-flow: column;
+}
+
+.titulars-contenidor > a {
+	color: black;
+	text-decoration: none;
+}
+
+.titular {
+	display: flex;
+	flex-flow: row;
+	margin: 4px;
+}
+
+.titular > h3 {
+	font-size: 1em;
+	margin: 4px;
+}
+
+.titular > img {
+	height: 100px;
+}
+
+/* Taula */
+
+#taula {
+	grid-area: taula;
+}
+
+table,
+th,
+td {
+	border: 2px solid yellowgreen;
+	border-collapse: collapse;
+	vertical-align: middle;
+	text-align: center;
+	padding: 4px;
+}
+
+th {
+	color: dodgerblue;
+}
+
+/* Buttletí */
+
+#butlleti {
+	grid-area: butlleti;
+}
+
+form {
+	display: flex;
+	flex-flow: column;
+}
+
+form > * {
+	margin: 4px;
+	width: max-content;
+}
+
+.form-row {
+	display: flex;
+	flex-flow: row;
+}
+.label-required::after {
+	content: "*";
+	color: red;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	color: white;
+	background-color: black;
+	padding: 0px 32px;
+}
+
+/* Peu de pàgina */
+
+footer {
+	grid-area: footer;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	color: white;
+	background-color: royalblue;
+	padding: 4px;
+}

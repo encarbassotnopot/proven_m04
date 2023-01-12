@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Eina" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Prova escrita 1</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="https://proven.cat">
+				<img class="logo" src="img/logo.jpeg" alt="Logo Notícies"></a>
+		</header>
+
+		<nav>
+			<div class="nav-container">
+				<a href="#" class="nav-item">PORTADA</a>
+				<a href="#" class="nav-item">SUCCESSOS</a>
+				<a href="#" class="nav-item">CULTURA</a>
+				<a href="#" class="nav-item">LOCAL</a>
+				<a href="#" class="nav-item">SOCIETAT</a>
+				<a href="#" class="nav-item">EL MÓN</a>
+			</div>
+		</nav>
+
+		<section id="imatges">
+			<h2>EL DIA EN IMATGES</h2>
+			<div class="imatges-contenidor">
+				<img class="imatge" src="img/i1.jpg" alt="Giorgia Meloni" />
+				<img
+					class="imatge"
+					src="img/i2.jpg"
+					alt="D'esquerra a dreta, Annas Hatem, Laszlo Alberto, Ramiro Carranza i Aimar Santamaria, els quatre treballadors acomiadats per Bonpreu-Esclat" />
+				<img
+					class="imatge"
+					src="img/i3.jpg"
+					alt="Lula, a la seu electoral on votava a la segona volta de les eleccions" />
+				<img
+					class="imatge"
+					src="img/i4.jpg"
+					alt="Militants de la CGT i treballadores de GCT Plus i Ber-net s’han concentrat a les portes de l’empresa Ber-net" />
+			</div>
+		</section>
+
+		<section id="titulars">
+			<h2>TITULARS</h2>
+			<div class="titulars-contenidor">
+				<a href="#">
+					<article class="titular">
+						<img
+							src="img/t1.jpg"
+							alt="El professor emèrit Mariano Marzo és conseller independent de Repsol des de l'any 2017" />
+						<h3>
+							El director de la càtedra de “transició energètica”
+							de la UB cobra 309.000 euros l'any com a conseller
+							de Repsol
+						</h3>
+					</article>
+				</a>
+				<a href="#">
+					<article class="titular">
+						<img
+							src="img/t2.jpg"
+							alt="Terrenys del camp de Tarragona on s'ubicaria el macrocomplex de Hard Rock, antic BCN World" />
+						<h3>
+							El Govern català desemborsa 150.000 euros públics
+							per aconseguir l'aprovació del megaprojecte de Hard
+							Rock a Tarragona
+						</h3>
+					</article>
+				</a>
+				<a href="#">
+					<article class="titular">
+						<img
+							src="img/t3.jpg"
+							alt="Desnonament al carrer Consell de Cent de Barcelona, el 13 de novembre de 2020" />
+						<h3>
+							Els detalls del nou protocol de desnonaments dels
+							Mossos d'Esquadra
+						</h3>
+					</article>
+				</a>
+			</div>
+		</section>
+
+		<section id="taula">
+			<h2>DADES</h2>
+			<h3>Població mundial el 2022</h3>
+			<table>
+				<thead>
+					<tr>
+						<th rowspan="2">Edats</th>
+						<th colspan="2">Edats</th>
+						<th rowspan="2">Homes</th>
+						<th rowspan="2">Dones</th>
+					</tr>
+					<tr>
+						<th>Absolut</th>
+						<th>%</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>De 0 a 14 anys</td>
+						<td>1.898.494.193</td>
+						<td>25.29</td>
+						<td>981.132.427</td>
+						<td>916.866.766</td>
+					</tr>
+					<tr>
+						<td>De 15 a 24 anys</td>
+						<td>1.183.361.031</td>
+						<td>15.77</td>
+						<td>611.245.863</td>
+						<td>572.115.168</td>
+					</tr>
+					<tr>
+						<td>De 25 a 54 anys</td>
+						<td>3.078.583.869</td>
+						<td rowspan="2">49.14</td>
+						<td>1.559.197.242</td>
+						<td>1.159.386.627</td>
+					</tr>
+					<tr>
+						<td>De 55 a 64 anys</td>
+						<td>663.685.068</td>
+						<td>324.134.030</td>
+						<td>339.551.038</td>
+					</tr>
+					<tr>
+						<td>De 65 anys o més</td>
+						<td>680.204.019</td>
+						<td>9.06</td>
+						<td>303.788.086</td>
+						<td>376.415.933</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section id="butlleti">
+			<h3>Vull rebre alertes de notícies</h3>
+			<form action="#">
+					<label class="label-required" for="email">Correu electrònic</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="nom@email.org"
+						required="required" />
+					<label class="label-required" for="password"
+						>Contrasenya</label
+					>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						placeholder="Contrasenya"
+						required="required" />
+				<a href="#">Has oblidat la contrasenya?</a>
+
+				<div class="form-row">
+					<input type="submit" value="Registra't" />
+					<input type="reset" value="Esborra" />
+				</div>
+			</form>
+		</section>
+
+		<footer>
+			<div>Eina Coma Bages</div>
+			<div>21/11/2022</div>
+		</footer>
+	</body>
+</html>
