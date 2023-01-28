@@ -1,0 +1,26 @@
+<!ELEMENT ex2 (juego*)>
+
+<!ELEMENT juego (personaje+, escenario, musica)>
+<!ATTLIST juego nombre CDATA #REQUIRED>
+<!ATTLIST juego dificultad (alta|baja) #IMPLIED>
+
+<!ELEMENT personaje (nombre, vidas, armas*, herramientas, superpoder?)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT vidas (#PCDATA)>
+<!ELEMENT armas (#PCDATA)>
+<!ELEMENT herramientas (#PCDATA)>
+<!ELEMENT superpoder EMPTY>
+<!ATTLIST superpoder descripcion CDATA #IMPLIED>
+
+<!ELEMENT escenario (planeta, nombre_lugar, coordenadas)>
+<!ELEMENT planeta (#PCDATA)>
+<!ELEMENT nombre_lugar (#PCDATA)>
+<!ELEMENT coordenadas (x, y, z)>
+<!ELEMENT x (#PCDATA)>
+<!ELEMENT y (#PCDATA)>
+<!ELEMENT z (#PCDATA)>
+
+<!ELEMENT musica (nombre_cancion, genero)+>
+<!ELEMENT nombre_cancion (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>

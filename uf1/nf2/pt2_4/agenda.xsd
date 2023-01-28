@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<!-- Nom -->
+
+	<xs:element name="nom" type="xs:string" />
+
+	<!-- Cognoms -->
+
+	<xs:element name="cognom" type="xs:string" />
+	<xs:element name="cognoms">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cognom" minOccurs="1" maxOccurs="2" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Gènere -->
+
+	<xs:element name="gènere">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Home" />
+				<xs:enumeration value="Dona" />
+				<xs:enumeration value="No Binari" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<!-- Naixement -->
+
+	<xs:attribute name="dia">
+		<xs:simpleType>
+			<xs:restriction base="xs:positiveInteger">
+				<xs:minInclusive value="1" />
+				<xs:maxInclusive value="31" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+	<xs:attribute name="mes">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Gener" />
+				<xs:enumeration value="Febrer" />
+				<xs:enumeration value="Març" />
+				<xs:enumeration value="Abril" />
+				<xs:enumeration value="Maig" />
+				<xs:enumeration value="Juny" />
+				<xs:enumeration value="Juliol" />
+				<xs:enumeration value="Agost" />
+				<xs:enumeration value="Setembre" />
+				<xs:enumeration value="Octubre" />
+				<xs:enumeration value="Novembre" />
+				<xs:enumeration value="Desembre" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+	<xs:attribute name="any">
+		<xs:simpleType>
+			<xs:restriction base="xs:positiveInteger">
+				<xs:minInclusive value="1900" />
+				<xs:maxInclusive value="2016" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+	<xs:element name="naixement">
+		<xs:complexType>
+			<xs:attribute ref="dia" use="required" />
+			<xs:attribute ref="mes" use="required" />
+			<xs:attribute ref="any" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- NIF -->
+
+	<xs:element name="nif">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="\d{8}[A-Z]" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<!-- Telèfon -->
+
+	<xs:element name="telèfon">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:pattern value="[0-9]{9}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<!-- Direcció -->
+
+	<xs:element name="tipus_via">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Avinguda" />
+				<xs:enumeration value="Carrer" />
+				<xs:enumeration value="Plaça" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="via">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="100" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="número" type="xs:positiveInteger" />
+
+	<xs:element name="pis">
+		<xs:simpleType>
+			<xs:restriction base="xs:positiveInteger">
+				<xs:maxInclusive value="99" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="porta" />
+
+	<xs:element name="població">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="100" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="codi_postal">
+		<xs:simpleType>
+			<xs:restriction base="xs:positiveInteger">
+				<xs:pattern value="\d{5}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="direcció">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tipus_via" />
+				<xs:element ref="via" />
+				<xs:element ref="número" />
+				<xs:element ref="pis" />
+				<xs:element ref="població" />
+				<xs:element ref="codi_postal" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Contacte -->
+
+	<xs:element name="contacte">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom" />
+				<xs:element ref="cognoms" />
+				<xs:element ref="gènere" />
+				<xs:element ref="naixement" />
+				<xs:element ref="nif" />
+				<xs:element ref="telèfon" maxOccurs="2" />
+				<xs:element ref="direcció" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Agenda -->
+
+	<xs:element name="agenda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="contacte" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

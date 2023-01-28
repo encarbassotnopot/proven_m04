@@ -1,0 +1,167 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<!-- Personaje -->
+
+	<xs:element name="nombre">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="3" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="vidas">
+		<xs:simpleType>
+			<xs:restriction base="xs:positiveInteger" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="armas">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="20" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="herramientas">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="20" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="superpoder">
+		<xs:complexType>
+			<xs:attribute name="descripcion" type="superpoder_tipo" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="personaje">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="vidas" />
+				<xs:element ref="armas" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="herramientas" />
+				<xs:element ref="superpoder" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Escenario -->
+
+	<xs:element name="planeta">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="20" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="nombre_lugar">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="20" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="x" type="xs:integer" />
+	<xs:element name="y" type="xs:integer" />
+	<xs:element name="z" type="xs:integer" />
+
+	<xs:element name="coordenadas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="x" />
+				<xs:element ref="y" />
+				<xs:element ref="z" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="escenario">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="planeta" />
+				<xs:element ref="nombre_lugar" />
+				<xs:element ref="coordenadas" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Musica -->
+
+	<xs:element name="nombre_cancion">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="25" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="genero">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="20" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="musica">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element ref="nombre_cancion" />
+				<xs:element ref="genero" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Juego -->
+
+	<xs:element name="juego">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="personaje" maxOccurs="unbounded" />
+				<xs:element ref="escenario" />
+				<xs:element ref="musica" />
+			</xs:sequence>
+			<xs:attribute name="nombre" use="required" type="nombre_juego_tipo"/>
+			<xs:attribute name="dificultad" use="optional" type="dificultad_tipo" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- ex2 -->
+
+	<xs:element name="ex2">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="juego" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Tipus -->
+
+	<xs:simpleType name="nombre_juego_tipo">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="5" />
+			<xs:maxLength value="50" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="dificultad_tipo">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="alta" />
+			<xs:enumeration value="baja" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="superpoder_tipo">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="15" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ex2 SYSTEM "joc.dtd">
+<ex2>
+  <juego nombre="Dead Space vs Superman" dificultad="alta">
+    <personaje>
+      <nombre>Isaac</nombre> 
+      <vidas>3</vidas>
+      <armas>Cortadora de plasma</armas>
+      <armas>Rifle de asalto</armas>
+      <herramientas>Traje</herramientas>
+    </personaje>
+    <personaje>
+      <nombre>Superman</nombre>
+      <vidas>5</vidas>
+      <herramientas>Disfraz</herramientas>
+      <superpoder descripcion="vuela"/>  
+    </personaje>
+    <escenario>
+      <planeta>La Tierra</planeta>
+      <nombre_lugar>La Tierra</nombre_lugar>
+      <coordenadas>
+        <x>14</x>
+        <y>25</y>
+        <z>0</z>
+      </coordenadas>  
+    </escenario>
+    <musica>
+     <nombre_cancion>Stricken</nombre_cancion>
+     <genero>Metal</genero>
+     <nombre_cancion>Make a move</nombre_cancion>
+     <genero>Pop-rock</genero>
+    </musica>
+  </juego>
+  <juego nombre="Animal Crossing Factory Edition" dificultad="baja">
+   <personaje>
+      <nombre>Isabelle</nombre> 
+      <vidas>1</vidas>
+      <armas>Red</armas>
+      <herramientas>Pala</herramientas>
+    </personaje>
+    <personaje>
+      <nombre>Azabache</nombre>
+      <vidas>1</vidas>
+      <herramientas>Disfraz</herramientas>
+      <superpoder/>  
+    </personaje>
+    <escenario>
+      <planeta>AnimalCrossingLandia</planeta>
+      <nombre_lugar>Isla Principal</nombre_lugar>
+      <coordenadas>
+        <x>100</x>
+        <y>-14</y>
+        <z>4</z>
+      </coordenadas>  
+    </escenario>
+    <musica>
+     <nombre_cancion>Im not a vampire</nombre_cancion>
+     <genero>Metal</genero>
+     <nombre_cancion>Im blue</nombre_cancion>
+     <genero>Musica de los 80</genero>
+     <nombre_cancion>Tetris OST</nombre_cancion>
+     <genero>OST</genero>
+    </musica>
+  </juego>  
+</ex2>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="agenda.xsd">
+	<contacte>
+		<nom>Laia</nom>
+		<cognoms>
+			<cognom>Carbó</cognom>
+			<cognom>Vidal</cognom>
+		</cognoms>
+		<gènere>Dona</gènere>
+		<naixement dia="1" mes="Novembre" any="2002" />
+		<nif>45621584A</nif>
+		<telèfon>938565562</telèfon>
+		<direcció>
+			<tipus_via>Carrer</tipus_via>
+			<via>Major</via>
+			<número>3</número>
+			<pis>2</pis>
+			<població>Gelida</població>
+			<codi_postal>08790</codi_postal>
+		</direcció>
+	</contacte>
+	<contacte>
+		<nom>Ona</nom>
+		<cognoms>
+			<cognom>Rius</cognom>
+			<cognom>Voltà</cognom>
+		</cognoms>
+		<gènere>Dona</gènere>
+		<naixement dia="13" mes="Gener" any="1999" />
+		<nif>98465131R</nif>
+		<telèfon>664318584</telèfon>
+		<direcció>
+			<tipus_via>Avinguda</tipus_via>
+			<via>Agulló</via>
+			<número>85</número>
+			<pis>1</pis>
+			<població>Gelida</població>
+			<codi_postal>08790</codi_postal>
+		</direcció>
+	</contacte>
+</agenda>
