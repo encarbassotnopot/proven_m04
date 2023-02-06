@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE institut SYSTEM "institut.dtd">
+<institut nom="Provençana">
+	<anys>
+		<any curs="2022-2023">
+			<cicle nom="DAM">
+				<alumne matrícula="DAM-1238">
+					<dades>
+						<dni>12345678A</dni>
+						<nom>Laia</nom>
+						<cognom>Hernandez Camps</cognom>
+						<estudis>
+							<estudi anyFinal="2020">ESO</estudi>
+							<estudi anyFinal="2022">CFGM Sistmes microinformàtics i xarxes</estudi>
+						</estudis>
+						<telèfon>632515032</telèfon>
+					</dades>
+					<expedient>
+						<mòdul codi="M01" nom="Sistemes Informàtics" professor="Laura">4</mòdul>
+						<mòdul codi="M02" nom="Bases de dades" professor="Èlia" aprovat="aprovat">10</mòdul>
+						<mòdul codi="M03" nom="Programació" professor="Elenea" aprovat="aprovat">7</mòdul>
+					</expedient>
+				</alumne>
+				<alumne matrícula="DAM-1239">
+					<dades>
+						<dni>12345679B</dni>
+						<nom>Ona</nom>
+						<cognom>Hernandez Camps</cognom>
+						<estudis>
+							<estudi anyFinal="2020">ESO</estudi>
+							<estudi anyFinal="2022">Batxillerat</estudi>
+						</estudis>
+						<telèfon>632515032</telèfon>
+						<email> ona.hc@mail.com </email>
+					</dades>
+					<expedient>
+						<mòdul codi="M01" nom="Sistemes Informàtics" professor="Laura">4</mòdul>
+						<mòdul codi="M02" nom="Bases de dades" professor="Èlia" aprovat="aprovat">10</mòdul>
+						<mòdul codi="M03" nom="Programació" professor="Elenea" aprovat="aprovat">7</mòdul>
+					</expedient>
+				</alumne>
+			</cicle>
+			<cicle nom="DAW">
+				<alumne matrícula="DAW-6804">
+					<dades>
+						<dni>12345678A</dni>
+						<nom>Laia</nom>
+						<cognom>Hernandez Camps</cognom>
+						<estudis>
+							<estudi anyFinal="2020">ESO</estudi>
+							<estudi anyFinal="2022">CFGM Sistmes microinformàtics i xarxes</estudi>
+						</estudis>
+						<telèfon>632515032</telèfon>
+					</dades>
+					<expedient>
+						<mòdul codi="M01" nom="Sistemes Informàtics" professor="Laura">4</mòdul>
+						<mòdul codi="M02" nom="Bases de dades" professor="Èlia" aprovat="aprovat">10</mòdul>
+						<mòdul codi="M03" nom="Programació" professor="Elenea" aprovat="aprovat">7</mòdul>
+					</expedient>
+				</alumne>
+				<alumne matrícula="DAW-35463">
+					<dades>
+						<dni>12345679B</dni>
+						<nom>Ona</nom>
+						<cognom>Hernandez Camps</cognom>
+						<estudis>
+							<estudi anyFinal="2020">ESO</estudi>
+							<estudi anyFinal="2022">Batxillerat</estudi>
+						</estudis>
+						<telèfon>632515032</telèfon>
+						<email> ona.hc@mail.com </email>
+					</dades>
+					<expedient>
+						<mòdul codi="M01" nom="Sistemes Informàtics" professor="Laura">4</mòdul>
+						<mòdul codi="M02" nom="Bases de dades" professor="Èlia" aprovat="aprovat">10</mòdul>
+						<mòdul codi="M03" nom="Programació" professor="Elenea" aprovat="aprovat">7</mòdul>
+					</expedient>
+				</alumne>
+			</cicle>
+			<cicle nom="DAWBio">
+				<alumne matrícula="DAWBio-3849">
+					<dades>
+						<dni>12345678A</dni>
+						<nom>Laia</nom>
+						<cognom>Hernandez Camps</cognom>
+						<estudis>
+							<estudi anyFinal="2020">ESO</estudi>
+							<estudi anyFinal="2022">CFGM Sistmes microinformàtics i xarxes</estudi>
+						</estudis>
+						<telèfon>632515032</telèfon>
+					</dades>
+					<expedient>
+						<mòdul codi="M01" nom="Sistemes Informàtics" professor="Laura">4</mòdul>
+						<mòdul codi="M02" nom="Bases de dades" professor="Èlia" aprovat="aprovat">10</mòdul>
+						<mòdul codi="M03" nom="Programació" professor="Elenea" aprovat="aprovat">7</mòdul>
+					</expedient>
+				</alumne>
+				<alumne matrícula="DAWBio-3584">
+					<dades>
+						<dni>12345679B</dni>
+						<nom>Ona</nom>
+						<cognom>Hernandez Camps</cognom>
+						<estudis>
+							<estudi anyFinal="2020">ESO</estudi>
+							<estudi anyFinal="2022">Batxillerat</estudi>
+						</estudis>
+						<telèfon>632515032</telèfon>
+						<email> ona.hc@mail.com </email>
+					</dades>
+					<expedient>
+						<mòdul codi="M01" nom="Sistemes Informàtics" professor="Laura">4</mòdul>
+						<mòdul codi="M02" nom="Bases de dades" professor="Èlia" aprovat="aprovat">10</mòdul>
+						<mòdul codi="M03" nom="Programació" professor="Elenea" aprovat="aprovat">7</mòdul>
+					</expedient>
+				</alumne>
+			</cicle>
+			<cicle nom="ASIX">
+				<alumne matrícula="ASIX-4514">
+					<dades>
+						<dni>12345678A</dni>
+						<nom>Laia</nom>
+						<cognom>Hernandez Camps</cognom>
+						<estudis>
+							<estudi anyFinal="2022">ESO</estudi>
+						</estudis>
+						<telèfon>632515032</telèfon>
+					</dades>
+					<expedient>
+						<mòdul codi="M01" nom="Sistemes Informàtics" professor="Laura">4</mòdul>
+						<mòdul codi="M02" nom="Bases de dades" professor="Èlia" aprovat="aprovat">10</mòdul>
+						<mòdul codi="M03" nom="Programació" professor="Elenea" aprovat="aprovat">7</mòdul>
+					</expedient>
+				</alumne>
+				<alumne matrícula="ASIX-5431">
+					<dades>
+						<dni>12345679B</dni>
+						<nom>Ona</nom>
+						<cognom>Hernandez Camps</cognom>
+						<estudis>
+							<estudi anyFinal="2022">ESO</estudi>
+						</estudis>
+						<telèfon>632515032</telèfon>
+						<email> ona.hc@mail.com </email>
+					</dades>
+					<expedient>
+						<mòdul codi="M01" nom="Sistemes Informàtics" professor="Laura">4</mòdul>
+						<mòdul codi="M02" nom="Bases de dades" professor="Èlia" aprovat="aprovat">10</mòdul>
+						<mòdul codi="M03" nom="Programació" professor="Elenea" aprovat="aprovat">7</mòdul>
+					</expedient>
+				</alumne>
+			</cicle>
+		</any>
+	</anys>
+</institut>

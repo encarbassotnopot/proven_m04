@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Institut -->
+<!ELEMENT institut (anys)>
+<!ATTLIST institut nom CDATA #REQUIRED>
+
+<!ELEMENT anys (any*)>
+
+<!ELEMENT any (cicle+)>
+<!ATTLIST any curs CDATA #REQUIRED>
+
+<!ELEMENT cicle (alumne+)>
+<!ATTLIST cicle nom (DAM | DAW | DAWBio | ASIX) #REQUIRED>
+
+<!-- Alumne -->
+<!ELEMENT alumne (dades, expedient)>
+<!ATTLIST alumne matrícula ID #REQUIRED>
+
+<!-- Alumne Dades -->
+<!ELEMENT dades (dni, nom, cognom, estudis, telèfon, email?)>
+
+<!ELEMENT dni (#PCDATA)>
+
+<!ELEMENT nom (#PCDATA)>
+
+<!ELEMENT cognom (#PCDATA)>
+
+<!ELEMENT estudis (estudi*)>
+
+<!ELEMENT estudi (#PCDATA)>
+<!ATTLIST estudi anyFinal CDATA #IMPLIED>
+
+<!ELEMENT telèfon (#PCDATA)>
+
+<!ELEMENT email (#PCDATA)>
+
+<!-- Alumne Expedient -->
+<!ELEMENT expedient (mòdul+)>
+
+<!ELEMENT mòdul (#PCDATA)>
+<!ATTLIST mòdul codi CDATA #REQUIRED>
+<!ATTLIST mòdul nom CDATA #REQUIRED>
+<!ATTLIST mòdul professor CDATA #REQUIRED>
+<!ATTLIST mòdul aprovat CDATA #FIXED "aprovat">

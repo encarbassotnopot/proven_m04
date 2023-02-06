@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<concessionaris xsi:noNamespaceSchemaLocation="consecionari.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <concessionari id="1">
+        <nom>Talleres Chapauto S.A.</nom>
+        <ciutat>Madrid</ciutat>
+        <cotxes>
+            <cotxe combustible="benzina">
+                <model>Huracán 2014</model>
+                <marca>Lamborghini</marca>
+                <any>2016</any>
+                <potencia>610</potencia>
+                <places num_portes="5">7</places>
+                <preu>230775</preu>
+                <matricula>MNK-6290</matricula>
+                <consum>12.5</consum>
+                <velmax>325</velmax>
+                <actiu>2020-11-1</actiu>
+                <extra>pintura metalitzada</extra>
+                <extra>llantes</extra>
+            </cotxe>
+            <cotxe combustible="benzina">
+                <model>458 Italia</model>
+                <marca>Ferrari</marca>
+                <any>2019</any>
+                <potencia>570</potencia>
+                <places num_portes="4">5</places>
+                <preu>230561</preu>
+                <matricula>ASW-8307</matricula>
+                <consum>13.7</consum>
+                <velmax>325</velmax>
+                <actiu>2015-2-2</actiu>
+                <extra>pintura metalitzada</extra>
+                <extra>techo solar</extra>
+            </cotxe>
+            <cotxe combustible="hibrid">
+                <model>Fiesta ST</model>
+                <marca>Ford</marca>
+                <any>2012</any>
+                <potencia>200</potencia>
+                <places num_portes="5">4</places>
+                <preu>16560</preu>
+                <matricula>KLM-4140</matricula>
+                <consum>6.9</consum>
+                <velmax>232</velmax>
+                <actiu>2020-05-9</actiu>
+                <extra>luces extras</extra>
+            </cotxe>
+            <cotxe combustible="diesel">
+                <model>911</model>
+                <marca>Porsche</marca>
+                <any>2019</any>
+                <potencia>385</potencia>
+                <places num_portes="5">4</places>
+                <preu>12045</preu>
+                <matricula>LKE-6241</matricula>
+                <consum>12</consum>
+                <actiu>2020-10-10</actiu>
+            </cotxe>
+            <cotxe combustible="electric">
+                <model>Agera RS</model>
+                <marca>Koenigsegg</marca>
+                <any>2020</any>
+                <potencia>1360</potencia>
+                <places num_portes="5">4</places>
+                <preu>910000</preu>
+                <matricula>LKG-9414</matricula>
+                <consum>13.9</consum>
+                <velmax>444</velmax>
+                <actiu>2020-05-9</actiu>
+                <extra>tapizado de cuero</extra>
+            </cotxe>
+        </cotxes>
+    </concessionari>
+    <concessionari id="2">
+        <nom>Jaracar Motor</nom>
+        <ciutat>Cádiz</ciutat>
+        <cotxes>
+            <cotxe combustible="electric">
+                <model>Chiron</model>
+                <marca>Bugatti</marca>
+                <any>2018</any>
+                <potencia>1500</potencia>
+                <places num_portes="5">5</places>
+                <preu>2650000</preu>
+                <matricula>FFF-6516</matricula>
+                <consum>21.4</consum>
+                <velmax>458</velmax>
+                <actiu>2020-2-2</actiu>
+                <extra>cuir</extra>
+            </cotxe>
+            <cotxe combustible="hibrid">
+                <model>Regera</model>
+                <marca>Koenigsegg</marca>
+                <any>2021</any>
+                <potencia>1510</potencia>
+                <places num_portes="5">5</places>
+                <preu>924000</preu>
+                <matricula>ASD-5481</matricula>
+                <consum>14.7</consum>
+                <velmax>450</velmax>
+                <actiu>2020-05-9</actiu>
+                <extra>cuir</extra>
+                <extra>sostre de vidre</extra>
+            </cotxe>
+            <cotxe combustible ="benzina">
+                <model>Veyron Super Sport</model>
+                <marca>Bugatti</marca>
+                <any>2023</any>
+                <potencia>1200</potencia>
+                <places num_portes="3">4</places>
+                <preu>2600000</preu>
+                <matricula>LKJ-5574</matricula>
+                <consum>14.9</consum>
+                <actiu>2020-10-1</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+        </cotxes>
+    </concessionari>
+    <concessionari id="3">
+        <nom>Garatge Oliveras S.L.</nom>
+        <ciutat>Girona</ciutat>
+        <cotxes>
+            <cotxe combustible="diesel">
+                <model>Speedtail</model>
+                <marca>McLaren</marca>
+                <any>2021</any>
+                <potencia>1050</potencia>
+                <places num_portes="5">4</places>
+                <preu>1250000</preu>
+                <matricula>ASD-3384</matricula>
+                <consum>17.9</consum>
+                <velmax>411</velmax>
+                <actiu>2020-12-22</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe>
+                <model>124 Spider</model>
+                <marca>Abarth</marca>
+                <any>2020</any>
+                <potencia>170</potencia>
+                <places num_portes="5">4</places>
+                <preu>40020</preu>
+                <matricula>ABC-1148</matricula>
+                <consum>6.5</consum>
+                <velmax>230</velmax>
+                <actiu>2019-2-2</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe combustible="electric">
+                <model>Camaro</model>
+                <marca>Chevrolet</marca>
+                <any>2016</any>
+                <potencia>432</potencia>
+                <places num_portes="2">2</places>
+                <preu>45900</preu>
+                <matricula>LDS-2292</matricula>
+                <consum>10.5</consum>
+                <velmax>300</velmax>
+                <actiu>2020-12-2</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe combustible="hibrid">
+                <model>ASX</model>
+                <marca>Mitsubishi</marca>
+                <any>2018</any>
+                <potencia>150</potencia>
+                <places num_portes="5">2</places>
+                <preu>23700</preu>
+                <matricula>BCD-1167</matricula>
+                <consum>7.1</consum>
+                <velmax>190</velmax>
+                <actiu>2019-12-2</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+        </cotxes>
+    </concessionari>
+    <concessionari id="4">
+        <nom>Torvalenjo S.L.</nom>
+        <ciutat>Valencia</ciutat>
+        <cotxes>
+            <cotxe combustible="diesel">
+                <model>Regera</model>
+                <marca>Koenigsegg</marca>
+                <any>2017</any>
+                <potencia>1608</potencia>
+                <places num_portes="5">7</places>
+                <preu>1005100</preu>
+                <matricula>CDF-5501</matricula>
+                <consum>15.8</consum>
+                <velmax>487</velmax>
+                <actiu>2020-3-11</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe>
+                <model>Huracán 2014</model>
+                <marca>Lamborghini</marca>
+                <any>2021</any>
+                <potencia>690</potencia>
+                <places num_portes="5">4</places>
+                <preu>250415</preu>
+                <matricula>KKL-3302</matricula>
+                <consum>14.1</consum>
+                <velmax>348</velmax>
+                <actiu>2019-12-2</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe combustible="diesel">
+                <model>Chiron</model>
+                <marca>Bugatti</marca>
+                <any>2022</any>
+                <potencia>1670</potencia>
+                <places num_portes="5">4</places>
+                <preu>2850000</preu>
+                <matricula>WSF-6601</matricula>
+                <consum>24.2</consum>
+                <velmax>511</velmax>
+                <actiu>2017-2-2</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe combustible="diesel">
+                <model>Fiesta ST</model>
+                <marca>Ford</marca>
+                <any>2012</any>
+                <potencia>250</potencia>
+                <places num_portes="5">4</places>
+                <preu>23715</preu>
+                <matricula>CCF-2172</matricula>
+                <consum>9.5</consum>
+                <actiu>2019-1-12</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+        </cotxes>
+    </concessionari>
+    <concessionari id="5">
+        <nom>Autoforma S.A.</nom>
+        <ciutat>La Rioja</ciutat>
+        <cotxes>
+            <cotxe>
+                <model>Veyron Super Sport</model>
+                <marca>Bugatti</marca>
+                <any>2011</any>
+                <potencia>1350</potencia>
+                <places num_portes="5">7</places>
+                <preu>2650000</preu>
+                <matricula>BCV-0608</matricula>
+                <consum>17.1</consum>
+                <velmax>483</velmax>
+                <actiu>2019-1-1</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe combustible="benzina">
+                <model>Camaro</model>
+                <marca>Chevrolet</marca>
+                <any>2016</any>
+                <potencia>398</potencia>
+                <places num_portes="5">4</places>
+                <preu>40900</preu>
+                <matricula>FDR-6261</matricula>
+                <consum>8.9</consum>
+                <velmax>264</velmax>
+                <actiu>2020-3-1</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe combustible="diesel">
+                <model>ASX</model>
+                <marca>Mitsubishi</marca>
+                <any>2021</any>
+                <potencia>185</potencia>
+                <places num_portes="2">2</places>
+                <preu>27105</preu>
+                <matricula>HTY-4192</matricula>
+                <consum>9.1</consum>
+                <velmax>222</velmax>
+                <actiu>2011-1-1</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe combustible="hibrid">
+                <model>Regera</model>
+                <marca>Koenigsegg</marca>
+                <any>2020</any>
+                <potencia>1400</potencia>
+                <places num_portes="5">7</places>
+                <preu>898152</preu>
+                <matricula>FFG-9460</matricula>
+                <consum>13.1</consum>
+                <velmax>422</velmax>
+                <actiu>2020-2-2</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+        </cotxes>
+    </concessionari>
+    <concessionari id="6">
+        <nom>ESTORAUTO S.L.</nom>
+        <ciutat>Tarragona</ciutat>
+        <cotxes>
+            <cotxe>
+                <model>Speedtail</model>
+                <marca>McLaren</marca>
+                <any>2016</any>
+                <potencia>1150</potencia>
+                <places num_portes="3">4</places>
+                <preu>1370000</preu>
+                <matricula>KKL-9437</matricula>
+                <consum>19.6</consum>
+                <velmax>437</velmax>
+               <actiu>2011-11-11</actiu>
+               <extra>pintura metalitzada</extra>
+            </cotxe>
+            <cotxe combustible="hibrid">
+                <model>911</model>
+                <marca>Porsche</marca>
+                <any>2020</any>
+                <potencia>416</potencia>
+                <places num_portes="3">2</places>
+                <preu>138715</preu>
+                <matricula>KKL-0267</matricula>
+                <consum>15.7</consum>
+                <velmax>361</velmax>
+                <actiu>2020-2-23</actiu>
+                <extra>pintura metalitzada</extra>
+            </cotxe>
+        </cotxes>
+    </concessionari>
+</concessionaris>

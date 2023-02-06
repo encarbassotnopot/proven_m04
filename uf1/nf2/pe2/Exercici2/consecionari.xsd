@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<!-- Concessionaris -->
+	<xs:element name="concessionaris">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="concessionari" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Concessionari -->
+	<xs:element name="concessionari">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom" />
+				<xs:element ref="ciutat" />
+				<xs:element ref="cotxes" />
+			</xs:sequence>
+			<xs:attribute ref="id" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:attribute name="id">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer" />
+		</xs:simpleType>
+	</xs:attribute>
+
+	<xs:element name="nom" type="xs:string" />
+	<xs:element name="ciutat" type="xs:string" />
+
+	<!-- Cotxes -->
+	<xs:element name="cotxes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cotxe" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Cotxe -->
+	<xs:element name="cotxe">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="model" />
+				<xs:element ref="marca" />
+				<xs:element ref="any" />
+				<xs:element ref="potencia" />
+				<xs:element ref="places" />
+				<xs:element ref="preu" />
+				<xs:element ref="matricula" />
+				<xs:element ref="consum" />
+				<xs:element ref="velmax" minOccurs="0" />
+				<xs:element ref="actiu" />
+				<xs:element ref="extra" minOccurs="0" maxOccurs="10" />
+			</xs:sequence>
+			<xs:attribute ref="combustible" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:attribute name="combustible">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="diesel" />
+				<xs:enumeration value="benzina" />
+				<xs:enumeration value="gas" />
+				<xs:enumeration value="hibrid" />
+				<xs:enumeration value="electric" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+	<xs:element name="model">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="25" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="marca">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="25" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="any">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="2000" />
+				<xs:maxInclusive value="2023" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="potencia" type="xs:integer"></xs:element>
+
+	<xs:element name="places">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="num_portes" type="xs:integer" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="preu" type="xs:integer"></xs:element>
+
+	<xs:element name="matricula">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Z]{3}-\d{4}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="consum" type="xs:float"></xs:element>
+	<xs:element name="velmax" type="xs:integer"></xs:element>
+	<xs:element name="actiu" type="xs:string"></xs:element>
+	<xs:element name="extra" type="xs:string"></xs:element>
+</xs:schema>
